@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+section{
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    color: beige;
+    background: linear-gradient(-45deg,#f5977a,#f8609a,#75ec9d,#3b57f3);
+    background-size: 400% 400%;
+    position: absolute;
+    animation: change 10s ease-in-out infinite;
+}
+h1{
+    margin: 8px;
+    padding: 1px;
+}
+ form{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+@keyframes change{
+    0%{
+        background-position:0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position:0 50%;
+    }
+}
